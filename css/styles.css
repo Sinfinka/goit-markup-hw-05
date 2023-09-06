@@ -356,7 +356,8 @@ img {
   overflow: hidden;
 }
 
-.portfolio-section-list-item:hover .portfolio-item-overlay {
+.portfolio-section-list-item:hover .portfolio-item-overlay,
+.portfolio-section-list-item:focus .portfolio-item-overlay {
   transform: translateY(0);
 }
 
@@ -368,6 +369,7 @@ img {
   height: 100%;
   background-color: #4d5ae5;
   color: #f4f4fd;
+  overflow: auto;
   padding: 40px 32px;
   font-size: 16px;
   font-weight: 400;
@@ -443,4 +445,50 @@ img {
 .footer-social-media .social-media-link:hover,
 .footer-social-media .social-media-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-form-wraper {
+  margin-left: 80px;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-input-email {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+.footer-button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
 }
