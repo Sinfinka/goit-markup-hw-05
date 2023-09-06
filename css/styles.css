@@ -500,6 +500,8 @@ input {
   margin-left: 16px;
 }
 
+/* Modal form */
+
 .modal-wrapper {
   position: fixed;
   top: 0;
